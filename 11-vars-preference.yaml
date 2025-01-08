@@ -11,7 +11,10 @@
     private: false # not confidential 
   tasks:
   - name: print the message
-    vars:
-      GREETING: "Task level variables"
+    # vars:
+    #   GREETING: "Task level variables"
     ansible.builtin.debug:
       msg: "Hello from {{GREETING}}"
+
+#1. from args
+#2. task level variables
