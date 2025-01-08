@@ -15,6 +15,12 @@
     #   GREETING: "Task level variables"
     ansible.builtin.debug:
       msg: "Hello from {{GREETING}}"
+  
+  - name: print all the facts
+    # vars:
+    #   GREETING: "Task level variables"
+    ansible.builtin.debug:
+      msg: "{{ ansible_facts }}"
 
 #1. from args
 #2. task level variables
