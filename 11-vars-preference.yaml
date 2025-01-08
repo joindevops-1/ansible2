@@ -3,8 +3,8 @@
   connection: local
   vars:
     GREETING: "Play level variables"
-  vars_files:
-  - vars.yaml
+  # vars_files:
+  # - vars.yaml
   vars_prompt:
   - name: GREETING
     prompt: Please enter the greeting
