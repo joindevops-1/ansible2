@@ -1,5 +1,6 @@
 - name: Check if a number is greater than 10
-  hosts: localhost
+  hosts: local
+  connection: local
   gather_facts: no
   vars:
     my_number: 15  # Change this to test different numbers
