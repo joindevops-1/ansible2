@@ -1,0 +1,15 @@
+- name: Check if a number is greater than 10
+  hosts: localhost
+  gather_facts: no
+  vars:
+    my_number: 15  # Change this to test different numbers
+  tasks:
+    - name: Print if the number is greater than 10
+      debug:
+        msg: "The number {{ my_number }} is greater than 10."
+      when: my_number > 10
+
+    - name: Print if the number is not greater than 10
+      debug:
+        msg: "The number {{ my_number }} is not greater than 10."
+      when: my_number <= 10
