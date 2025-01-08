@@ -22,6 +22,10 @@
     ansible.builtin.debug:
       msg: "{{ ansible_facts }}"
 
+  - name: access facts
+    ansible.builtin.debug:
+      msg: "Print fact: {{ansible_all_ipv4_addresses}}"
+
 #1. from args
 #2. task level variables
 #3. Files
