@@ -1,8 +1,8 @@
 - name: checking vars preference
   hosts: local
   connection: local
-  # vars:
-  #   GREETING: "Play level variables"
+  vars:
+    GREETING: "Play level variables"
   # vars_files:
   # - vars.yaml
   # vars_prompt:
